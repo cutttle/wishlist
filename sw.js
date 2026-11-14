@@ -1,5 +1,5 @@
 // Офлайн-кэш: сначала сеть (чтобы всегда была свежая версия), при отсутствии интернета — кэш.
-const CACHE = 'wishlist-v1';
+const CACHE = 'wishlist-v2';
 const ASSETS = [
   './', 'index.html', 'styles.css', 'app.js', 'config.js', 'gifts.js',
   'manifest.webmanifest', 'icon.svg', 'icon-192.png', 'icon-512.png',

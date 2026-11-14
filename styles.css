@@ -159,9 +159,22 @@ h1 { font-size: 30px; font-weight: 900; margin: 8px 0 6px; line-height: 1.15; }
   display: grid;
   place-items: center;
   overflow: hidden;
+  /* Единый стиль: кремовый фон + мягкий пастельный круг за предметом */
+  background:
+    radial-gradient(circle at 50% 46%, var(--accent, #ffd6e0) 0 31%, transparent 31.3%),
+    radial-gradient(circle at 15% 12%, rgba(255, 255, 255, .9) 0 10%, transparent 30%),
+    linear-gradient(165deg, #fffaf4, #f4e9de);
 }
-.card-emoji { font-size: min(34vw, 150px); line-height: 1; filter: drop-shadow(0 10px 18px rgba(0, 0, 0, .18)); }
-.card-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+.card-media::after { /* тонкая линия-«полка» под предметом */
+  content: '';
+  position: absolute;
+  left: 12%; right: 12%; bottom: 6%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(120, 80, 60, .18), transparent);
+  pointer-events: none;
+}
+.card-emoji { font-size: min(34vw, 150px); line-height: 1; filter: drop-shadow(0 14px 18px rgba(80, 40, 30, .22)); }
+.card-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; pointer-events: none; }
 .card-media.has-img .card-emoji { display: none; }
 
 .card-badge {
@@ -184,8 +197,7 @@ h1 { font-size: 30px; font-weight: 900; margin: 8px 0 6px; line-height: 1.15; }
   bottom: 6px;
   z-index: 1;
   font-size: 10px;
-  color: rgba(255, 255, 255, .8);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  color: rgba(90, 60, 50, .55);
 }
 
 .card-body { flex: 0 1 auto; padding: 18px 20px 20px; overflow: hidden; }
@@ -273,7 +285,8 @@ h1 { font-size: 30px; font-weight: 900; margin: 8px 0 6px; line-height: 1.15; }
   place-items: center;
   font-size: 26px;
   overflow: hidden;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
   background-position: center;
 }
 .item-title { flex: 1; font-weight: 700; font-size: 15px; line-height: 1.25; min-width: 0; }

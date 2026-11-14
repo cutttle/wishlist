@@ -8,7 +8,7 @@
 //  emoji       — иллюстрация, если нет фото
 //  image       — ссылка на фото или путь к файлу, например "images/watch.jpg" (необязательно)
 //  link        — ссылка на товар в магазине (необязательно)
-//  gradient    — фон картинки (необязательно, иначе подберётся автоматически)
+//  accent      — цвет пастельного круга за предметом, например "#ffd6e0" (необязательно)
 //  badge       — метка на фото, например "💛 Моя рекомендация" (необязательно)
 //  credit      — подпись автора фото, если лицензия требует (необязательно)
 //  commentHint — подсказка над полем комментария, если подарок выбран (необязательно)
@@ -20,8 +20,7 @@ window.GIFTS = [
     description:
       "Натуральный шёлк mulberry: прохладный, гладкий и бережный к коже и волосам. Цвет и узор можно выбрать другой — какой больше нравится.",
     emoji: "🛏️",
-    image: "images/silk-pillowcase.jpg",
-    gradient: "linear-gradient(135deg,#e7e3d4,#9a9a6e)",
+    image: "images/u/pillowcase.webp",
   },
   {
     id: "rug",
@@ -29,9 +28,8 @@ window.GIFTS = [
     description:
       "Мягкий ковёр, по которому приятно ходить босиком. На фото — варианты для вдохновения. Напиши в комментарии в конце, какой ближе, примерный размер и каким видишь свой ковёр.",
     emoji: "🧶",
-    image: "images/rug.jpg?v=2",
+    image: "images/u/rug.webp",
     commentHint: "Ковёр: какой из вариантов ближе, примерный размер и какой ковёр хочется (цвет, ворс, форма)",
-    gradient: "linear-gradient(135deg,#f3ece0,#d8c7a8)",
   },
   {
     id: "airfryer",
@@ -39,8 +37,7 @@ window.GIFTS = [
     description:
       "Хрустящая курица, овощи и картошка почти без масла — быстро и без возни. Полезная еда после тренировки, которая готовится сама, пока ты отдыхаешь.",
     emoji: "🍗",
-    image: "images/airfryer.jpg",
-    gradient: "linear-gradient(180deg,#e1dee7,#e1dce3)",
+    image: "images/u/airfryer.webp",
   },
   {
     id: "floor-lamp",
@@ -48,8 +45,7 @@ window.GIFTS = [
     description:
       "Тёплый мягкий свет для уютных вечеров с книжкой или сериалом. На фото — варианты для вдохновения: золотая дуга, хрусталь или шары. Напиши в комментарии, какой ближе.",
     emoji: "🛋️",
-    image: "images/floor-lamp.jpg?v=2",
-    gradient: "linear-gradient(135deg,#d9cbb0,#4f6378)",
+    image: "images/u/floor-lamp.webp",
     commentHint: "Торшер: какой из вариантов ближе (или какой хочется)",
   },
   {
@@ -58,8 +54,7 @@ window.GIFTS = [
     description:
       "Мягкий свет у кровати или на рабочем столе. На фото — варианты: хрусталь, волна, умная лампа с Алисой или шары. Напиши в комментарии, какая ближе.",
     emoji: "💡",
-    image: "images/table-lamp.jpg?v=2",
-    gradient: "linear-gradient(135deg,#ece3d3,#7a7f8c)",
+    image: "images/u/table-lamp.webp",
     commentHint: "Настольная лампа: какой из вариантов ближе (или какая хочется)",
   },
   {
@@ -69,7 +64,7 @@ window.GIFTS = [
     description:
       "Моя личная рекомендация: после тренировок — просто топ, забитые мышцы отпускает за пару минут. Компактный, влезет даже в командировочный чемодан.",
     emoji: "💆‍♀️",
-    gradient: "linear-gradient(135deg,#f5f1ec,#d9cfc4)",
+    image: "images/u/massage-gun.webp",
   },
   {
     id: "home-scents",
@@ -77,8 +72,7 @@ window.GIFTS = [
     description:
       "Ароматические палочки и модная «армянская бумага» — чтобы дома всегда пахло уютом. Для любительницы ароматов — самое то.",
     emoji: "🪔",
-    image: "images/home-scents.jpg?v=2",
-    gradient: "linear-gradient(135deg,#f4f1ea,#c9c6b4)",
+    image: "images/u/home-scents.webp",
   },
   {
     id: "tea-pair",
@@ -86,8 +80,7 @@ window.GIFTS = [
     description:
       "Тонкий фарфор с золотой каймой — чтобы каждое чаепитие было маленьким праздником. На фото варианты: напиши в комментарии, какой рисунок ближе.",
     emoji: "🫖",
-    image: "images/tea-pairs.jpg?v=2",
-    gradient: "linear-gradient(135deg,#f4f3f6,#cfd9ef)",
+    image: "images/u/tea-pairs.webp",
     commentHint: "Чайная пара: какой рисунок ближе",
   },
   {
@@ -96,7 +89,7 @@ window.GIFTS = [
     description:
       "Занятия в красивой светлой студии: глубокая работа мышц, осанка и растяжка без перегрузки. Идеальное дополнение к бегу и плаванию.",
     emoji: "🧘‍♀️",
-    gradient: "linear-gradient(135deg,#f6e9e1,#d8b9a8)",
+    image: "images/u/pilates.webp",
   },
   {
     id: "swimsuit",
@@ -104,7 +97,6 @@ window.GIFTS = [
     description:
       "Красивый и удобный: держит форму, не боится хлорки и не сползает на дорожке. Напиши в комментарии размер и любимые цвета.",
     emoji: "🩱",
-    gradient: "linear-gradient(135deg,#c2e9fb,#5f9fe0)",
     commentHint: "Купальник: размер и любимые цвета или фасон",
   },
   {
@@ -113,8 +105,7 @@ window.GIFTS = [
     description:
       "Фен и укладка в одном: 7 насадок для локонов, объёма и гладкости, бережно к волосам. Салонная укладка дома и в командировке.",
     emoji: "💇‍♀️",
-    image: "images/styler.jpg?v=2",
-    gradient: "linear-gradient(180deg,#d97c4b,#f0a785)",
+    image: "images/u/styler.webp",
   },
   {
     id: "pink-pan",
@@ -122,7 +113,7 @@ window.GIFTS = [
     description:
       "Та самая розовая сковорода с мраморным покрытием: ничего не пригорает, а на кухне сразу становится красиво. Готовить в ней — отдельное удовольствие.",
     emoji: "🍳",
-    gradient: "linear-gradient(135deg,#f8d7e3,#d98aa8)",
+    image: "images/u/pan.webp",
   },
   {
     id: "perfume-workshop",
@@ -130,7 +121,7 @@ window.GIFTS = [
     description:
       "Вечер с парфюмером: разберёшься в нотах и соберёшь собственный аромат, которого больше ни у кого нет. Идеально для коллекционера духов.",
     emoji: "⚗️",
-    gradient: "linear-gradient(135deg,#efe3f7,#b79ad6)",
+    image: "images/u/workshop.webp",
   },
   {
     id: "lolita-concert",
@@ -138,7 +129,7 @@ window.GIFTS = [
     description:
       "Живой голос, драйв и любимые хиты — лучший способ отметить 8 Марта. Вечер, который точно запомнится.",
     emoji: "🎤",
-    gradient: "linear-gradient(135deg,#3a3a46,#9a9aa8)",
+    image: "images/u/lolita.webp",
   },
   {
     id: "bebur-standup",
@@ -146,9 +137,8 @@ window.GIFTS = [
     description:
       "Умный, тёплый и очень смешной стендап — вечер, на котором гарантированно отдохнёшь от работы и насмеёшься до слёз.",
     emoji: "🎙️",
-    image: "images/standup.jpg",
+    image: "images/u/standup.webp",
     credit: "Фото: Ivan 1104, CC BY-SA 4.0",
-    gradient: "linear-gradient(135deg,#7a0d12,#1a0a0a)",
   },
   {
     id: "shaman-concert",
@@ -156,7 +146,7 @@ window.GIFTS = [
     description:
       "Мощный голос и большое шоу — эмоции, которые долго не отпускают.",
     emoji: "🎶",
-    gradient: "linear-gradient(135deg,#1d2b4f,#6d84b8)",
+    image: "images/u/shaman.webp",
   },
   {
     id: "maybe-baby-concert",
@@ -164,7 +154,7 @@ window.GIFTS = [
     description:
       "Дерзко, весело и громко: подпевать, танцевать и отрываться вместе с залом.",
     emoji: "💖",
-    gradient: "linear-gradient(135deg,#ffb3d9,#c77dff)",
+    image: "images/u/maybebaby.webp",
   },
   {
     id: "markul-concert",
@@ -172,7 +162,7 @@ window.GIFTS = [
     description:
       "Атмосферный вечер с любимыми треками вживую — идеальное начало лета.",
     emoji: "🎧",
-    gradient: "linear-gradient(135deg,#2b2d42,#8d99ae)",
+    image: "images/u/markul.webp",
   },
   {
     id: "therr-maitz-concert",
@@ -180,7 +170,7 @@ window.GIFTS = [
     description:
       "Живой звук, бархатный голос и стильная музыка — красивый вечер, после которого хочется переслушать всё заново.",
     emoji: "🎹",
-    gradient: "linear-gradient(135deg,#0f0f14,#5c4b7d)",
+    image: "images/u/belyaev.webp",
   },
   {
     id: "husky-concert",
@@ -188,7 +178,7 @@ window.GIFTS = [
     description:
       "Мощная энергия, честные тексты и зал, который поёт хором. Мурашки гарантированы.",
     emoji: "🔥",
-    gradient: "linear-gradient(135deg,#1b1b1b,#8a2a2a)",
+    image: "images/u/husky.webp",
   },
   {
     id: "dmitrienko-concert",
@@ -196,7 +186,6 @@ window.GIFTS = [
     description:
       "Лёгкие, светлые песни, под которые хочется петь и влюбляться, — тёплое начало весны.",
     emoji: "🌷",
-    gradient: "linear-gradient(135deg,#ffe0ec,#9ec5ff)",
   },
   {
     id: "mnogoznaal-concert",
@@ -204,7 +193,6 @@ window.GIFTS = [
     description:
       "Атмосферный звук, глубокие тексты и тот самый северный вайб — концерт, который хочется прожить, а не просто послушать.",
     emoji: "🌌",
-    gradient: "linear-gradient(135deg,#0b132b,#3a506b)",
   },
   {
     id: "nutcracker",
@@ -212,7 +200,6 @@ window.GIFTS = [
     description:
       "Балет Чайковского накануне Нового года: красивое платье, музыка из детства и то самое ощущение праздника и волшебства.",
     emoji: "🩰",
-    gradient: "linear-gradient(135deg,#123524,#b8860b)",
   },
   {
     id: "theatre",
@@ -220,7 +207,6 @@ window.GIFTS = [
     description:
       "Спектакль на твой вкус: лёгкая комедия, современная драма, иммерсивный театр или мюзикл. Напиши в комментарии, какой жанр ближе, — подберу постановку.",
     emoji: "🎭",
-    gradient: "linear-gradient(135deg,#5b1a2e,#d4a373)",
     commentHint: "Театр: какой жанр ближе (комедия, драма, иммерсивный, мюзикл…)",
   },
   {
@@ -230,8 +216,7 @@ window.GIFTS = [
     description:
       "После долгих прогулок или бега — просто спасение: ролики и мягкий прогрев снимают усталость за 15 минут. Очень круто, проверено лично.",
     emoji: "🦶",
-    image: "images/foot-massager.jpg",
-    gradient: "linear-gradient(180deg,#efe5fc,#efe5fc)",
+    image: "images/u/foot-massager.webp",
   },
   {
     id: "irrigator",
@@ -239,7 +224,7 @@ window.GIFTS = [
     description:
       "Беспроводной и компактный: чистота там, куда не достаёт щётка. Заряжается от USB — удобно брать с собой в командировки.",
     emoji: "🦷",
-    gradient: "linear-gradient(135deg,#e3f2ff,#7fb8ef)",
+    image: "images/u/irrigator.webp",
   },
   {
     id: "winter-running",
@@ -247,8 +232,7 @@ window.GIFTS = [
     description:
       "Чтобы бегать в любой мороз: куртка от ветра, термобельё, бафф, перчатки, зимние кроссовки или налобный фонарик. Напиши, чего не хватает, и размер.",
     emoji: "❄️",
-    image: "images/winter-running.jpg",
-    gradient: "linear-gradient(135deg,#dff1ff,#a9d3f5)",
+    image: "images/u/winter-running.webp",
     commentHint: "Зимний бег: что из экипировки нужнее всего и твой размер",
   },
   {
@@ -257,7 +241,7 @@ window.GIFTS = [
     description:
       "Те самые трендовые часы из рилсов: миниатюрный циферблат, золотой браслет — классика, которая подходит ко всему. Есть круглые, овальные и квадратные — напиши, какие ближе.",
     emoji: "⌚",
-    gradient: "linear-gradient(135deg,#f6ead8,#c9a27a)",
+    image: "images/u/watches.webp",
     commentHint: "Часы Burker: круглые, овальные или квадратные, золото или комбинированные",
   },
   {
@@ -266,7 +250,7 @@ window.GIFTS = [
     description:
       "Хорошие перчатки из мягкой кожи — тёплые, тонкие и элегантные. Классические, с заклёпками или длинные: напиши, какие ближе, и размер.",
     emoji: "🧤",
-    gradient: "linear-gradient(135deg,#efe6e2,#6e3b3b)",
+    image: "images/u/gloves.webp",
     commentHint: "Перчатки: какой фасон и цвет ближе, размер",
   },
   {
@@ -275,8 +259,7 @@ window.GIFTS = [
     description:
       "Качественный ремень, который собирает образ: тонкий классический, широкий с акцентной пряжкой или яркий текстильный. Напиши, какой ближе, и размер.",
     emoji: "👜",
-    image: "images/belts.jpg",
-    gradient: "linear-gradient(135deg,#f2f2f2,#bdbdbd)",
+    image: "images/u/belts.webp",
     commentHint: "Ремень: какой из вариантов ближе, цвет и размер",
   },
   {
@@ -285,8 +268,7 @@ window.GIFTS = [
     description:
       "Футболка «I miss my dog» и ироничная тарелка Underdog — модные вещи от московских брендов для тех, кто обожает собак. Напиши, что больше нравится, и размер футболки.",
     emoji: "🐶",
-    image: "images/merch.jpg",
-    gradient: "linear-gradient(135deg,#ffffff,#f4c6d2)",
+    image: "images/u/merch.webp",
     commentHint: "Мерч: что больше нравится и размер футболки",
   },
   {
@@ -295,7 +277,6 @@ window.GIFTS = [
     description:
       "Казанский марафон в мае, «Белые ночи» в Петербурге в июле или «Забег.РФ» в Новосибирске. Напиши, какой забег и дистанцию хочешь, — медаль на финише за тобой!",
     emoji: "🏅",
-    gradient: "linear-gradient(135deg,#fff1c1,#ff9a62)",
     commentHint: "Забег: какой (Казань, Петербург, Новосибирск) и дистанция",
   },
   {
@@ -304,7 +285,6 @@ window.GIFTS = [
     description:
       "Массаж, бассейн и травяной чай — целый день только для тебя. Можно прямо в командировке, в Партизанске или Находке, или уже дома, в Новосибирске.",
     emoji: "🧖‍♀️",
-    gradient: "linear-gradient(135deg,#e8f6f0,#9fd3c7)",
     commentHint: "СПА: где удобнее (в командировке или в Новосибирске) и что больше любишь — массаж, баню, уход",
   },
   {
@@ -313,8 +293,7 @@ window.GIFTS = [
     description:
       "Стильная кожаная карточница вместо громоздкого кошелька: классика, яркий принт, с молнией или на шнурке через шею. Напиши, какая ближе.",
     emoji: "💳",
-    image: "images/card-holders.jpg",
-    gradient: "linear-gradient(135deg,#f2f2f2,#c9c9c9)",
+    image: "images/u/card-holders.webp",
     commentHint: "Карточница: какая из вариантов ближе (или какой цвет)",
   },
   {
@@ -323,8 +302,7 @@ window.GIFTS = [
     description:
       "Колье, браслет, серьги или кольцо — золото или серебро, нежное или дерзкое. На фото варианты для вдохновения: напиши, что хочется и какой металл ближе.",
     emoji: "💍",
-    image: "images/jewelry.jpg",
-    gradient: "linear-gradient(135deg,#f5efe6,#d4b483)",
+    image: "images/u/jewelry.webp",
     commentHint: "Украшения: что хочется (колье, браслет, серьги, кольцо), золото или серебро, размер кольца",
   },
   {
@@ -333,7 +311,6 @@ window.GIFTS = [
     description:
       "Тот самый аромат, о котором давно мечтаешь. Ты в духах разбираешься лучше всех — напиши в комментарии точное название, бренд и объём, чтобы не промахнуться.",
     emoji: "🌸",
-    gradient: "linear-gradient(135deg,#fde2ec,#c98bb9)",
     commentHint: "Парфюм: точное название, бренд и объём (например, «Бренд — Аромат, EDP 50 мл»)",
   },
   {
@@ -342,7 +319,6 @@ window.GIFTS = [
     description:
       "Подарок, который согреет хвостатых: пожертвование в фонд помощи бездомным животным от твоего имени. Если есть любимый фонд или приют — напиши в комментарии.",
     emoji: "🐾",
-    gradient: "linear-gradient(135deg,#fff3e0,#f4a261)",
     commentHint: "Донат: есть ли любимый фонд или приют",
   },
   {
@@ -351,8 +327,7 @@ window.GIFTS = [
     description:
       "Печатает снимки прямо с телефона за минуту, без картриджей и чернил. Карманный размер — фото из командировок и путешествий сразу на холодильник или в альбом.",
     emoji: "📸",
-    image: "images/photo-printer.jpg",
-    gradient: "linear-gradient(135deg,#a0522d,#5a2a17)",
+    image: "images/u/photo-printer.webp",
   },
   {
     id: "mini-camera",
@@ -360,8 +335,7 @@ window.GIFTS = [
     description:
       "Крошечная цифровая камера-брелок в ретро-стиле 1987: висит на сумке или ключах и снимает атмосферные кадры. Продаётся в «слепых» коробках — какой дизайн выпадет, сюрприз!",
     emoji: "📷",
-    image: "images/mini-camera.jpg",
-    gradient: "linear-gradient(90deg,#9fc2ab,#e9b6b4)",
+    image: "images/u/mini-camera.webp",
   },
   {
     id: "projector",
@@ -369,7 +343,7 @@ window.GIFTS = [
     description:
       "Кинотеатр, который помещается в сумку: фильмы и сериалы на всю стену дома или в гостинице в командировке. Подключается к телефону по Wi‑Fi.",
     emoji: "📽️",
-    gradient: "linear-gradient(135deg,#2c3440,#7d8ea3)",
+    image: "images/u/projector.webp",
   },
 
   // ---------- Парфюмерия ----------

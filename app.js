@@ -2,20 +2,12 @@
   'use strict';
 
   const CFG = window.APP_CONFIG || {};
-  const GRADIENTS = [
-    'linear-gradient(135deg,#ffd1dc,#ff9a9e)',
-    'linear-gradient(135deg,#c2e9fb,#a1c4fd)',
-    'linear-gradient(135deg,#fddb92,#f6a96b)',
-    'linear-gradient(135deg,#d4fc79,#96e6a1)',
-    'linear-gradient(135deg,#e0c3fc,#8ec5fc)',
-    'linear-gradient(135deg,#ffecd2,#fcb69f)',
-    'linear-gradient(135deg,#fbc2eb,#a6c1ee)',
-    'linear-gradient(135deg,#a8edea,#fed6e3)',
-  ];
+  // Пастельные акценты: круг за предметом на карточке (по очереди, если в подарке не задан свой accent)
+  const ACCENTS = ['#ffd6e0', '#d7e8ff', '#ffe6c2', '#d6f0e0', '#e6dcff', '#ffdccb', '#d4f1f4', '#f9e0f0'];
   const GIFTS = (window.GIFTS || []).map((g, i) => ({
     ...g,
     id: String(g.id || 'gift' + (i + 1)),
-    gradient: g.gradient || GRADIENTS[i % GRADIENTS.length],
+    accent: g.accent || ACCENTS[i % ACCENTS.length],
     emoji: g.emoji || '🎁',
   }));
   const CHOICES = {
@@ -73,7 +65,7 @@
     card.dataset.id = g.id;
 
     const media = el('div', 'card-media');
-    media.style.background = g.gradient;
+    media.style.setProperty('--accent', g.accent);
     media.append(el('span', 'card-emoji', g.emoji));
     if (g.image) {
       const img = new Image();
@@ -270,13 +262,14 @@
   // ---------- Итоги ----------
   function thumb(g) {
     const t = el('div', 'item-thumb');
-    t.style.background = g.gradient;
+    t.style.backgroundColor = g.accent;
     t.textContent = g.emoji;
     if (g.image) {
       const img = new Image();
       img.onload = () => {
         t.textContent = '';
-        t.style.background = `center / cover no-repeat url("${g.image.replace(/"/g, '%22')}")`;
+        t.style.backgroundImage = `url("${g.image.replace(/"/g, '%22')}")`;
+        t.classList.add('has-img');
       };
       img.src = g.image;
     }
