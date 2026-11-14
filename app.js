@@ -87,6 +87,8 @@
       media.append(img);
     }
 
+    if (g.badge) media.append(el('span', 'card-badge', g.badge));
+
     const body = el('div', 'card-body');
     body.append(el('h2', 'card-title', g.title));
     if (g.price) body.append(el('div', 'card-price', g.price));
