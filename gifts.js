@@ -342,4 +342,13 @@ window.GIFTS = [
     emoji: "📽️",
     image: "images/u/projector.webp",
   },
+  {
+    id: "pisca-bag",
+    title: "Спортивная сумка Pisca",
+    description:
+      "Мягкая и очень красивая сумка для бассейна и тренировок: влезут форма, полотенце и бутылка воды. На фото варианты — напиши, какая ближе.",
+    emoji: "👜",
+    image: "images/u/pisca-bags.webp",
+    commentHint: "Сумка Pisca: какая модель и цвет ближе",
+  },
 ];
