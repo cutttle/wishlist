@@ -355,6 +355,15 @@ window.GIFTS = [
     image: "images/photo-printer.jpg",
     gradient: "linear-gradient(135deg,#a0522d,#5a2a17)",
   },
+  {
+    id: "mini-camera",
+    title: "Мини-камера Kodak Charmera",
+    description:
+      "Крошечная цифровая камера-брелок в ретро-стиле 1987: висит на сумке или ключах и снимает атмосферные кадры. Продаётся в «слепых» коробках — какой дизайн выпадет, сюрприз!",
+    emoji: "📷",
+    image: "images/mini-camera.jpg",
+    gradient: "linear-gradient(90deg,#9fc2ab,#e9b6b4)",
+  },
 
   // ---------- Парфюмерия ----------
   {
