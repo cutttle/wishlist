@@ -71,6 +71,15 @@ window.GIFTS = [
     emoji: "💆‍♀️",
     gradient: "linear-gradient(135deg,#f5f1ec,#d9cfc4)",
   },
+  {
+    id: "home-scents",
+    title: "Ароматы для дома",
+    description:
+      "Палочки с белым шалфеем и модная «армянская бумага» из Парижа с тёплым ароматом бензоина и ванили. Для любительницы ароматов — самое то.",
+    emoji: "🪔",
+    image: "images/home-scents.jpg",
+    gradient: "linear-gradient(135deg,#f4f1ea,#c9c6b4)",
+  },
 
   // ---------- Парфюмерия ----------
   {
