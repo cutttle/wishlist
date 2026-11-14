@@ -1,5 +1,5 @@
 // Офлайн-кэш: сначала сеть (чтобы всегда была свежая версия), при отсутствии интернета — кэш.
-const CACHE = 'wishlist-v2';
+const CACHE = 'wishlist-v3';
 const ASSETS = [
   './', 'index.html', 'styles.css', 'app.js', 'config.js', 'gifts.js',
   'manifest.webmanifest', 'icon.svg', 'icon-192.png', 'icon-512.png',
@@ -21,7 +21,7 @@ self.addEventListener('fetch', (e) => {
   const req = e.request;
   if (req.method !== 'GET') return; // отправка письма идёт мимо кэша
   e.respondWith(
-    fetch(req)
+    fetch(req, new URL(req.url).origin === location.origin ? { cache: 'no-cache' } : {})
       .then((res) => {
         if (res.ok && (new URL(req.url).origin === location.origin || req.url.includes('fonts.'))) {
           const copy = res.clone();

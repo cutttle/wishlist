@@ -28,7 +28,8 @@
   // ---------- Состояние (сохраняется, чтобы не потерять прогресс) ----------
   const STORAGE_KEY = 'wishlist-v1:' + GIFTS.map((g) => g.id).join('|');
   // Ссылка с ?reset — начать с нуля: стереть сохранённый прогресс на этом устройстве
-  if (new URLSearchParams(location.search).has('reset')) {
+  const wasReset = new URLSearchParams(location.search).has('reset');
+  if (wasReset) {
     try {
       Object.keys(localStorage).filter((k) => k.startsWith('wishlist-')).forEach((k) => localStorage.removeItem(k));
     } catch (_) {}
@@ -461,6 +462,7 @@
     ? 'done'
     : state.screen === 'swipe' && !remaining().length ? 'results' : state.screen;
   show(['welcome', 'swipe', 'results', 'done'].includes(startScreen) ? startScreen : 'welcome');
+  if (wasReset) toast('Всё сброшено — можно начинать заново ✨');
 
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     navigator.serviceWorker.register('sw.js').catch(() => {});
