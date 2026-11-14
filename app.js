@@ -327,12 +327,16 @@
   comment.addEventListener('input', () => { state.comment = comment.value; save(); });
 
   $('#btn-restart').addEventListener('click', () => {
-    if (!confirm('Начать заново? Текущий выбор сбросится (комментарий останется).')) return;
+    if (!confirm('Начать с нуля? Выбор и комментарий сотрутся.')) return;
     state.choices = {};
     state.history = [];
+    state.comment = '';
+    state.sent = false;
+    comment.value = '';
     save();
     cards.forEach((c) => { c.style.transition = 'none'; c.style.display = ''; c.style.opacity = '1'; });
-    show('swipe');
+    show('welcome');
+    toast('Всё сброшено — можно начинать заново ✨');
   });
 
   // ---------- Текст письма ----------
