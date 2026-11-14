@@ -61,7 +61,7 @@
     : 'С днём рождения!';
   $('#welcome-text').textContent =
     (CFG.greeting || '') + (GIFTS.length ? ` Вариантов: ${GIFTS.length}.` : '');
-  $('#welcome-from').textContent = CFG.fromName ? `С любовью, ${CFG.fromName} 💛` : '';
+  $('#welcome-from').textContent = CFG.fromName || '';
   $('#btn-start').addEventListener('click', () => show(remaining().length ? 'swipe' : 'results'));
 
   // ---------- Карточки ----------
