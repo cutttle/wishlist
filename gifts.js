@@ -280,6 +280,16 @@ window.GIFTS = [
     gradient: "linear-gradient(135deg,#f2f2f2,#bdbdbd)",
     commentHint: "Ремень: какой из вариантов ближе, цвет и размер",
   },
+  {
+    id: "dog-merch",
+    title: "Мерч для собачников и модников",
+    description:
+      "Футболка «I miss my dog» и ироничная тарелка Underdog — модные вещи от московских брендов для тех, кто обожает собак. Напиши, что больше нравится, и размер футболки.",
+    emoji: "🐶",
+    image: "images/merch.jpg",
+    gradient: "linear-gradient(135deg,#ffffff,#f4c6d2)",
+    commentHint: "Мерч: что больше нравится и размер футболки",
+  },
 
   // ---------- Парфюмерия ----------
   {
