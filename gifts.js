@@ -41,6 +41,16 @@ window.GIFTS = [
     image: "images/airfryer.jpg",
     gradient: "linear-gradient(180deg,#e1dee7,#e1dce3)",
   },
+  {
+    id: "floor-lamp",
+    title: "Напольный торшер",
+    description:
+      "Тёплый мягкий свет для уютных вечеров с книжкой или сериалом. На фото — варианты для вдохновения: золотая дуга, хрусталь или шары. Напиши в комментарии, какой ближе.",
+    emoji: "🛋️",
+    image: "images/floor-lamp.jpg",
+    gradient: "linear-gradient(135deg,#d9cbb0,#4f6378)",
+    commentHint: "Торшер: какой из вариантов ближе (или какой хочется)",
+  },
 
   // ---------- Парфюмерия ----------
   {
