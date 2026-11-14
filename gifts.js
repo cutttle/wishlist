@@ -80,6 +80,16 @@ window.GIFTS = [
     image: "images/home-scents.jpg",
     gradient: "linear-gradient(135deg,#f4f1ea,#c9c6b4)",
   },
+  {
+    id: "tea-pair",
+    title: "Чайная пара Императорского фарфорового завода",
+    description:
+      "Тонкий фарфор с золотой каймой — чтобы каждое чаепитие было маленьким праздником. На фото варианты: напиши в комментарии, какой рисунок ближе.",
+    emoji: "🫖",
+    image: "images/tea-pairs.jpg",
+    gradient: "linear-gradient(135deg,#f4f3f6,#cfd9ef)",
+    commentHint: "Чайная пара: какой рисунок ближе",
+  },
 
   // ---------- Парфюмерия ----------
   {
