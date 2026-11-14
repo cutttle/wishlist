@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ff6b8b">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Вишлист">
+  <title>Вишлист ко дню рождения</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="app">
+
+    <!-- 1. Приветствие -->
+    <section id="screen-welcome" class="screen">
+      <div class="welcome">
+        <div class="welcome-emoji" aria-hidden="true">🎁</div>
+        <h1 id="welcome-title">С днём рождения!</h1>
+        <p id="welcome-text" class="lead"></p>
+        <ul class="legend">
+          <li><span class="chip chip-yes">→</span> вправо — <b>хочу</b></li>
+          <li><span class="chip chip-no">←</span> влево — <b>не надо</b></li>
+          <li><span class="chip chip-super">↑</span> вверх — <b>очень хочу!</b></li>
+        </ul>
+        <button id="btn-start" class="btn btn-primary btn-big">Начать</button>
+        <p id="welcome-from" class="from"></p>
+      </div>
+    </section>
+
+    <!-- 2. Свайпы -->
+    <section id="screen-swipe" class="screen">
+      <header class="topbar">
+        <button id="btn-undo" class="icon-btn" aria-label="Вернуть предыдущую карточку" title="Вернуть предыдущую">↶</button>
+        <div class="progress" aria-hidden="true"><div id="progress-bar" class="progress-bar"></div></div>
+        <span id="counter" class="counter">1 / 1</span>
+      </header>
+      <div id="deck" class="deck" aria-live="polite"></div>
+      <nav class="controls">
+        <button class="ctrl ctrl-no" data-choice="no" aria-label="Не надо">✕</button>
+        <button class="ctrl ctrl-super" data-choice="super" aria-label="Очень хочу">★</button>
+        <button class="ctrl ctrl-yes" data-choice="yes" aria-label="Хочу">♥</button>
+      </nav>
+    </section>
+
+    <!-- 3. Итоги + комментарий -->
+    <section id="screen-results" class="screen">
+      <div class="scroll">
+        <h1>Твой вишлист</h1>
+        <p class="muted">Проверь выбор — его можно поправить кнопками справа.</p>
+        <div id="results-list"></div>
+        <label class="comment-label" for="comment">Комментарий <span class="muted">(необязательно)</span></label>
+        <textarea id="comment" rows="4" maxlength="3000"
+          placeholder="Например: «наушники лучше белые», «размер M», «а ещё я давно хочу…»"></textarea>
+        <div id="send-error" class="send-error" hidden>
+          <p id="send-error-text">Не получилось отправить.</p>
+          <div class="fallback-btns">
+            <button id="btn-share" class="btn btn-ghost">📤 Отправить через мессенджер</button>
+            <button id="btn-copy" class="btn btn-ghost">📋 Скопировать текст</button>
+            <a id="btn-mailto" class="btn btn-ghost" hidden>✉️ Открыть почту</a>
+          </div>
+        </div>
+        <button id="btn-send" class="btn btn-primary btn-big">Отправить 💌</button>
+        <button id="btn-restart" class="btn btn-link">Пройти карточки заново</button>
+      </div>
+    </section>
+
+    <!-- 4. Готово -->
+    <section id="screen-done" class="screen">
+      <div class="welcome">
+        <div class="welcome-emoji" aria-hidden="true">🎉</div>
+        <h1>Готово!</h1>
+        <p class="lead">Твои пожелания улетели. Осталось только ждать праздника 🥳</p>
+        <button id="btn-review" class="btn btn-ghost">Посмотреть мой выбор</button>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="toast" class="toast" role="status" hidden></div>
+
+  <script src="config.js"></script>
+  <script src="gifts.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
