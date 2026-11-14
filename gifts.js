@@ -10,6 +10,18 @@
 //  link        — ссылка на товар в магазине (необязательно)
 //  gradient    — фон картинки (необязательно, иначе подберётся автоматически)
 window.GIFTS = [
+  // ---------- Подарки от заказчицы ----------
+  {
+    id: "silk-pillowcase",
+    title: "Шёлковая наволочка",
+    description:
+      "Натуральный шёлк mulberry: прохладный, гладкий и бережный к коже и волосам. Цвет и узор можно выбрать другой — какой больше нравится.",
+    emoji: "🛏️",
+    image: "images/silk-pillowcase.jpg",
+    link: "https://market.yandex.ru/card/navolochka-iz-naturalnogo-shelka-pragma-nuavo-osenniy-olivkovyy-1-sht-50kh70-sm/4523266781",
+    gradient: "linear-gradient(135deg,#e7e3d4,#9a9a6e)",
+  },
+
   // ---------- Парфюмерия ----------
   {
     id: "perfume-cert",
