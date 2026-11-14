@@ -308,6 +308,12 @@
         list.append(row);
       }
     }
+    const hints = GIFTS.filter((g) => g.commentHint && ['super', 'yes'].includes(state.choices[g.id]));
+    const hintList = $('#comment-hints-list');
+    hintList.textContent = '';
+    hints.forEach((g) => hintList.append(el('li', '', g.commentHint)));
+    $('#comment-hints').hidden = hints.length === 0;
+
     $('#btn-send').textContent = state.sent ? 'Отправить ещё раз (с изменениями) 💌' : 'Отправить 💌';
   }
 

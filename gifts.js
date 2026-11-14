@@ -9,6 +9,7 @@
 //  image       — ссылка на фото или путь к файлу, например "images/watch.jpg" (необязательно)
 //  link        — ссылка на товар в магазине (необязательно)
 //  gradient    — фон картинки (необязательно, иначе подберётся автоматически)
+//  commentHint — подсказка над полем комментария, если подарок выбран (необязательно)
 window.GIFTS = [
   // ---------- Подарки от заказчицы ----------
   {
@@ -20,6 +21,16 @@ window.GIFTS = [
     image: "images/silk-pillowcase.jpg",
     link: "https://market.yandex.ru/card/navolochka-iz-naturalnogo-shelka-pragma-nuavo-osenniy-olivkovyy-1-sht-50kh70-sm/4523266781",
     gradient: "linear-gradient(135deg,#e7e3d4,#9a9a6e)",
+  },
+  {
+    id: "rug",
+    title: "Уютный ковёр",
+    description:
+      "Мягкий ковёр, по которому приятно ходить босиком. Если хочешь — напиши в комментарии в конце примерный размер и каким видишь свой ковёр: цвет, ворс, форма.",
+    emoji: "🧶",
+    image: "images/rug.jpg",
+    commentHint: "Ковёр: примерный размер и какой ковёр хочется (цвет, ворс, форма)",
+    gradient: "linear-gradient(135deg,#f3ece0,#d8c7a8)",
   },
 
   // ---------- Парфюмерия ----------

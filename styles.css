@@ -269,6 +269,16 @@ h1 { font-size: 30px; font-weight: 900; margin: 8px 0 6px; line-height: 1.15; }
 .seg button.on[data-choice="no"] { background: var(--no); color: #fff; }
 
 .comment-label { display: block; font-weight: 900; font-size: 17px; margin: 24px 0 8px; }
+.comment-hints {
+  background: #fff6e6;
+  border-radius: 16px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.comment-hints p { margin: 0 0 4px; font-weight: 800; }
+.comment-hints ul { margin: 0; padding-left: 20px; }
+.comment-hints li { margin: 2px 0; }
 textarea {
   width: 100%;
   font: inherit;
