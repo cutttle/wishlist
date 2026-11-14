@@ -132,6 +132,14 @@ window.GIFTS = [
     emoji: "⚗️",
     gradient: "linear-gradient(135deg,#efe3f7,#b79ad6)",
   },
+  {
+    id: "lolita-concert",
+    title: "Концерт Лолиты 8 марта",
+    description:
+      "Живой голос, драйв и любимые хиты — лучший способ отметить 8 Марта. Вечер, который точно запомнится.",
+    emoji: "🎤",
+    gradient: "linear-gradient(135deg,#3a3a46,#9a9aa8)",
+  },
 
   // ---------- Парфюмерия ----------
   {
