@@ -200,6 +200,14 @@ window.GIFTS = [
     gradient: "linear-gradient(135deg,#ffe0ec,#9ec5ff)",
   },
   {
+    id: "mnogoznaal-concert",
+    title: "Концерт Многознаала 23 апреля",
+    description:
+      "Атмосферный звук, глубокие тексты и тот самый северный вайб — концерт, который хочется прожить, а не просто послушать.",
+    emoji: "🌌",
+    gradient: "linear-gradient(135deg,#0b132b,#3a506b)",
+  },
+  {
     id: "nutcracker",
     title: "Предновогодний «Щелкунчик»",
     description:
