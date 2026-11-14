@@ -27,6 +27,13 @@
 
   // ---------- Состояние (сохраняется, чтобы не потерять прогресс) ----------
   const STORAGE_KEY = 'wishlist-v1:' + GIFTS.map((g) => g.id).join('|');
+  // Ссылка с ?reset — начать с нуля: стереть сохранённый прогресс на этом устройстве
+  if (new URLSearchParams(location.search).has('reset')) {
+    try {
+      Object.keys(localStorage).filter((k) => k.startsWith('wishlist-')).forEach((k) => localStorage.removeItem(k));
+    } catch (_) {}
+    history.replaceState(null, '', location.pathname);
+  }
   const defaults = { screen: 'welcome', history: [], choices: {}, comment: '', sent: false };
   let state = defaults;
   try {
