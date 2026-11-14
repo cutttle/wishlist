@@ -133,8 +133,6 @@ window.GIFTS = [
   {
     id: "bebur-standup",
     title: "Стендап Андрея Бебуришвили",
-    description:
-      "Умный, тёплый и очень смешной стендап — вечер, на котором гарантированно отдохнёшь от работы и насмеёшься до слёз",
     emoji: "🎙️",
     image: "images/u/standup.webp",
     credit: "Фото: Ivan 1104, CC BY-SA 4.0",
