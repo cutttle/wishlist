@@ -48,7 +48,7 @@ window.GIFTS = [
     description:
       "Тёплый мягкий свет для уютных вечеров с книжкой или сериалом. На фото — варианты для вдохновения: золотая дуга, хрусталь или шары. Напиши в комментарии, какой ближе.",
     emoji: "🛋️",
-    image: "images/floor-lamp.jpg",
+    image: "images/floor-lamp.jpg?v=2",
     gradient: "linear-gradient(135deg,#d9cbb0,#4f6378)",
     commentHint: "Торшер: какой из вариантов ближе (или какой хочется)",
   },
@@ -58,7 +58,7 @@ window.GIFTS = [
     description:
       "Мягкий свет у кровати или на рабочем столе. На фото — варианты: хрусталь, волна, умная лампа с Алисой или шары. Напиши в комментарии, какая ближе.",
     emoji: "💡",
-    image: "images/table-lamp.jpg",
+    image: "images/table-lamp.jpg?v=2",
     gradient: "linear-gradient(135deg,#ece3d3,#7a7f8c)",
     commentHint: "Настольная лампа: какой из вариантов ближе (или какая хочется)",
   },
@@ -75,9 +75,9 @@ window.GIFTS = [
     id: "home-scents",
     title: "Ароматы для дома",
     description:
-      "Палочки с белым шалфеем и модная «армянская бумага» из Парижа с тёплым ароматом бензоина и ванили. Для любительницы ароматов — самое то.",
+      "Ароматические палочки и модная «армянская бумага» — чтобы дома всегда пахло уютом. Для любительницы ароматов — самое то.",
     emoji: "🪔",
-    image: "images/home-scents.jpg",
+    image: "images/home-scents.jpg?v=2",
     gradient: "linear-gradient(135deg,#f4f1ea,#c9c6b4)",
   },
   {
@@ -86,7 +86,7 @@ window.GIFTS = [
     description:
       "Тонкий фарфор с золотой каймой — чтобы каждое чаепитие было маленьким праздником. На фото варианты: напиши в комментарии, какой рисунок ближе.",
     emoji: "🫖",
-    image: "images/tea-pairs.jpg",
+    image: "images/tea-pairs.jpg?v=2",
     gradient: "linear-gradient(135deg,#f4f3f6,#cfd9ef)",
     commentHint: "Чайная пара: какой рисунок ближе",
   },
@@ -113,7 +113,7 @@ window.GIFTS = [
     description:
       "Фен и укладка в одном: 7 насадок для локонов, объёма и гладкости, бережно к волосам. Салонная укладка дома и в командировке.",
     emoji: "💇‍♀️",
-    image: "images/styler.jpg",
+    image: "images/styler.jpg?v=2",
     gradient: "linear-gradient(180deg,#d97c4b,#f0a785)",
   },
   {
