@@ -346,6 +346,15 @@ window.GIFTS = [
     gradient: "linear-gradient(135deg,#fff3e0,#f4a261)",
     commentHint: "Донат: есть ли любимый фонд или приют",
   },
+  {
+    id: "photo-printer",
+    title: "Портативный фотопринтер",
+    description:
+      "Печатает снимки прямо с телефона за минуту, без картриджей и чернил. Карманный размер — фото из командировок и путешествий сразу на холодильник или в альбом.",
+    emoji: "📸",
+    image: "images/photo-printer.jpg",
+    gradient: "linear-gradient(135deg,#a0522d,#5a2a17)",
+  },
 
   // ---------- Парфюмерия ----------
   {
