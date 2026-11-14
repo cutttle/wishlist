@@ -333,6 +333,7 @@
     comment.value = '';
     save();
     cards.forEach((c) => { c.style.transition = 'none'; c.style.display = ''; c.style.opacity = '1'; });
+    $('#btn-start').textContent = 'Начать';
     show('welcome');
     toast('Всё сброшено — можно начинать заново ✨');
   });
@@ -460,10 +461,9 @@
   }
 
   // ---------- Старт ----------
-  const startScreen = state.sent && state.screen !== 'results'
-    ? 'done'
-    : state.screen === 'swipe' && !remaining().length ? 'results' : state.screen;
-  show(['welcome', 'swipe', 'results', 'done'].includes(startScreen) ? startScreen : 'welcome');
+  // Всегда открываемся с приветствия; если уже начинали — кнопка «Продолжить» ведёт туда, где остановились
+  if (state.history.length) $('#btn-start').textContent = 'Продолжить';
+  show('welcome');
   if (wasReset) toast('Всё сброшено — можно начинать заново ✨');
 
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
