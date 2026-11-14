@@ -364,6 +364,14 @@ window.GIFTS = [
     image: "images/mini-camera.jpg",
     gradient: "linear-gradient(90deg,#9fc2ab,#e9b6b4)",
   },
+  {
+    id: "projector",
+    title: "Портативный проектор",
+    description:
+      "Кинотеатр, который помещается в сумку: фильмы и сериалы на всю стену дома или в гостинице в командировке. Подключается к телефону по Wi‑Fi.",
+    emoji: "📽️",
+    gradient: "linear-gradient(135deg,#2c3440,#7d8ea3)",
+  },
 
   // ---------- Парфюмерия ----------
   {
