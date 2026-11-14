@@ -93,9 +93,7 @@
     const body = el('div', 'card-body');
     body.append(el('h2', 'card-title', g.title));
     if (g.price) body.append(el('div', 'card-price', g.price));
-    if (g.description) body.append(el('p', 'card-desc', g.description));
-    body.append(el('p', 'card-own', '✨ Есть свой вариант? Скинь его в комментарии в конце'));
-    if (g.link) {
+    if (g.description) body.append(el('p', 'card-desc', g.description));    if (g.link) {
       const a = el('a', 'card-link', 'Посмотреть в магазине ↗');
       a.href = g.link;
       a.target = '_blank';
