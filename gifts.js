@@ -335,4 +335,12 @@ window.GIFTS = [
     image: "images/u/pisca-bags.webp",
     commentHint: "Сумка Pisca: какая модель и цвет ближе",
   },
+  {
+    id: "money",
+    title: "Деньги",
+    description:
+      "Классика, которая всегда в тему: потратишь на то, что хочется именно тебе",
+    emoji: "💸",
+    image: "images/u/money.webp",
+  },
 ];
